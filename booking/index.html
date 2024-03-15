@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-wrap">
+      <h2 class="mob">Hotel Booking</h2>
+      <h3 class="mob">Mobile Version</h3>
+      <h5 class="mob">View on a desktop for the better experience</h5>
+      <form action="">
+        <div class="NAME">
+          <label for="NAME">NAME</label><br/>
+          <input type="text" name="NAME" placeholder="Full Name"/><br/>
+        </div>
+        <div class="cont-no">
+          <label for="cont-no">CONTACT NUMBER</label><br/>
+          <input type="text" name="cont-no" placeholder="Your Mobile Number"/><br/>
+        </div>
+        <div class="ROOM">
+          <label for="ROOM">ROOM</label><br/>
+          <input type="text" name="ROOM" placeholder="Type of Room"/><br/>
+        </div>
+        <div class="guests">
+          <label for="guests">NUMBER OF GUESTS</label><br/><br/>
+          <button class="counter-btn" type="button" id="cnt-down">-</button>
+          <input type="text" id="guestNo" name="guests" value="2"/>
+          <button class="counter-btn" type="button" id="cnt-up">+</button>
+        </div>
+        <div class="dates">
+          <div class="arrival">
+            <label for="arrival">ARRIVAL</label><br/>
+            <input name="arrival" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="10/03/2016"/>
+          </div>
+          <div class="departure">
+            <label for="arrival">DEPARTURE</label><br/>
+            <input name="departure" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="05/11/2016"/>
+          </div>
+        </div>
+      </form>
+      <button class="btn" type="button">BOOK NOW</button>
+    </div>
+
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
